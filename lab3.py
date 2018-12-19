@@ -23,7 +23,6 @@ for i in range (5):
 
 turtle.mainloop()
 """
-
 """
 #exercise 2:
 import turtle
@@ -49,6 +48,13 @@ turtle.fd(90)
 turtle.end_fill()
 turtle.mainloop()
 """
+# #exercis 3:
+# import turtle 
+
+# turtle.register_shape("duck.gif")
+# turtle.shape("duck.gif")
+
+# turtle.mainloop()
 
 """
 #exercise 4:
@@ -64,19 +70,19 @@ turtle.fd(75)
 turtle.home())
 turtle.mainloop()
 """
-#part 2:
-import turtle
+# #part 2:
+# import turtle
 
-for i in range (360):
-	turtle.right(i)
-	turtle.forward(150)
-	turtle.right(45)
-	turtle.fd(85)
-	turtle.right(90)
-	turtle.fd(30)
-	turtle.penup()
-	turtle.home()
-	turtle.pendown()
+# for i in range (360):
+# 	turtle.right(i)
+# 	turtle.forward(150)
+# 	turtle.right(45)
+# 	turtle.fd(85)
+# 	turtle.right(90)
+# 	turtle.fd(30)
+# 	turtle.penup()
+# 	turtle.home()
+# 	turtle.pendown()
 	
 
-turtle.mainloop()
+# turtle.mainloop()
