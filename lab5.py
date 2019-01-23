@@ -1,27 +1,27 @@
 
-"""
-#problem 1:
-from turtle import *
-import turtle 
-import random
-colormode(255)
-class Square (Turtle):
-	def __init__ (self,size):
-		Turtle.__init__(self)
-		self.shape("square")
-		self.size = size
-		self.shapesize(size*size)
-	def random_color(self):
-		r = random.randint(0,255)
-		b = random.randint(0,255)
-		g = random.randint(0,255)
-		self.color(r, g, b)
 
-square1= Square(5)
-square1.random_color()
+# #problem 1:
+# from turtle import *
+# import turtle 
+# import random
+# colormode(255)
+# class Square (Turtle):
+# 	def __init__ (self,size):
+# 		Turtle.__init__(self)
+# 		self.shape("square")
+# 		self.size = size
+# 		self.shapesize(size*size)
+# 	def random_color(self):
+# 		r = random.randint(0,255)
+# 		b = random.randint(0,255)
+# 		g = random.randint(0,255)
+# 		self.color(r, g, b)
 
-turtle.mainloop()
-"""
+# square1= Square(5)
+# square1.random_color()
+
+# turtle.mainloop()
+
 
 
 # #extra
@@ -59,18 +59,13 @@ class Hexagon (Turtle):
 			self.fd(100)
 			self.right(60)
 		end_poly()
-		p= get_poly()
+		p = get_poly()
 		register_shape("Hexagon", p)
 		self.shape("Hexagon")
-	def random_color(self):
-		r = random.randint(0,255)
-		b = random.randint(0,255)
-		g = random.randint(0,255)
-		self.color(r, g, b)
+
 	def speed (self):
 		turtle.speed(5)
 
 hexagon1=Hexagon(2)
-hexagon1.random_color()
 hexagon1.speed()
 turtle.mainloop()

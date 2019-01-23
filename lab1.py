@@ -1,16 +1,16 @@
-"""
-#problem1:
-#1:
-print("Almog")
 
-#2:
-for index in range(3):
-	print("Almog")
+# #problem1:
+# #1:
+# print("Almog")
 
-#3:
-for index in range(100):
-	print("Almog") 
-"""
+# #2:
+# for index in range(3):
+# 	print("Almog")
+
+# #3:
+# for index in range(100):
+# 	print("Almog") 
+	
 
 """
 #problem2:
