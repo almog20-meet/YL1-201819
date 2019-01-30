@@ -3,6 +3,7 @@ import time
 import random
 import math
 from ball import Ball
+import tkinter as tk
 turtle.tracer(0)
 turtle.hideturtle()
 running = True
@@ -15,11 +16,14 @@ turtle.register_shape("replay.gif")
 button.shape("replay.gif")
 button.pu()
 button.goto(0, 0)
-#part 1 creating ball
+#part 1 creating ball 
+y_name = turtle.textinput("Input", "What is your name?")
+
 my_ball= Ball(0,0 ,10,10, 20, "red")
 
 #variables
-number_of_balls= 10
+
+number_of_balls= int(turtle.textinput("Input", "Choose your level"))
 minimum_ball_radius = 5
 maximum_ball_radius = 70
 minimum_ball_dx = 5
@@ -119,6 +123,9 @@ def movearound ():
 	Y = screen_height*1.4 - turtle.getcanvas().winfo_pointery()
 	#print(X,Y)
 	my_ball.goto (X, Y)
+	my_ball.clear()
+	my_ball.pencolor("black")
+	my_ball.write(y_name ,align = "center", font=("Ariel",20, "normal"))
 
 def replay(x,y):
 	screen_width = turtle.getcanvas().winfo_width()/2
@@ -147,18 +154,21 @@ def replay(x,y):
 	while running==True :
 		screen_width = turtle.getcanvas().winfo_width()/2
 		screen_height = turtle.getcanvas().winfo_height()/2
-
-
 		movearound() 
 		move_all_balls()
 		check_all_balls_collision()
 		turtle.update()
+
+		my_ball.clear()
+		my_ball.pencolor("black")
+		my_ball.write(y_name ,align = "center", font=("Ariel",20, "normal"))
 		time.sleep (.1)
 
 
 	for ball in BALLS:
 		ball.ht()
 	my_ball.ht()
+	my_ball.clear()
 	#replay button
 	button.showturtle()	
 	turtle.update()
@@ -172,12 +182,18 @@ while running==True :
 	move_all_balls()
 	check_all_balls_collision()
 	turtle.update()
+
+
+	my_ball.clear()
+	my_ball.pencolor("black")
+	my_ball.write(y_name ,align = "center", font=("Ariel",20, "normal"))
 	time.sleep (.1)
 
 
 for ball in BALLS:
 	ball.ht()
 my_ball.ht()
+my_ball.clear()
 #replay button
 button.showturtle()	
 button.onclick(replay)
